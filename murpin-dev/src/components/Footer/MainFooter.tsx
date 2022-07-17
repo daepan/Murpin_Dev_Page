@@ -21,11 +21,13 @@ const StyledMainFooter = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 200px;
     position : relative;
     transform : translateY(-100%);
 `
 const FooterTitle = styled.div`
     font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 `
 const FooterContent = styled.div`
     display: flex;
