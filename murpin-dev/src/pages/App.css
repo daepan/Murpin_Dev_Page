@@ -1,0 +1,9 @@
+@font-face {
+    font-family: DoHyeonRegular;
+    src: url('../../public/fonts/DoHyeon-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ignoto;
+    src: url('../../public/fonts/Ignoto.woff');
+}
