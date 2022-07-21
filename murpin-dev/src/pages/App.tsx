@@ -1,4 +1,6 @@
 import MainHeader from "../components/Header/MainHeader";
+import IntroduceSection from "../components/IntroduceSection/IntroduceSection";
+import ProfileSection from "../components/ProfileSection/ProfileSection";
 import MainFooter from "../components/Footer/MainFooter";
 import styled from "styled-components";
 import './App.css';
@@ -8,7 +10,8 @@ function App() {
    <Main>
     <MainHeader/>
       <MainContent>
-        
+        <IntroduceSection/>
+        <ProfileSection/>
       </MainContent>
     <MainFooter/>
    </Main>
@@ -17,6 +20,7 @@ function App() {
 
 const MainContent = styled.div`
   display: flex;
+  flex-direction: column;
   min-height: calc(100vh - 200px - 45px);
 `
 
