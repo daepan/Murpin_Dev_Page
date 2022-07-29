@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 
 const MainHeader = () => {
-  return(<StyledMainHeader>
+  return(
+  <StyledMainHeader>
     <HeaderTitle>Murpin-dev-test-page</HeaderTitle>
-  </StyledMainHeader>);
+  </StyledMainHeader>
+  );
 };
 
 
