@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import  styles from './IntroduceSection.module.css';
+import * as THREE from 'three';
 import styled from 'styled-components';
 import { useIntersection } from 'use-intersection';
+import { useTyping } from '../../utils/hooks/useTyping';
+import { Canvas } from '@react-three/fiber';
+
+import { useScrollEffect } from '../../utils/hooks/useScrollEffect';
 
 const IntroduceSection = () => {
-  const introduceRef = React.useRef(null)
+  const introduceRef = React.useRef<HTMLDivElement>(null);
   const introduceIntersecting = useIntersection(introduceRef);
-  return(<StyledIntroduceSection>
-    <div ref={introduceRef}>요게 사라지면?</div>
-    {!introduceIntersecting && '자기소개가보여'}
-  </StyledIntroduceSection>);
+  const PHRASE =['안녕하세요. 김대관입니다.'];
+
+  const text = useTyping({phrases : PHRASE});
+
+  return(
+  <div className={styles.section} ref={introduceRef}>
+    <div> {text}</div>
+  </div>);
 };
 
 
@@ -16,8 +26,8 @@ export default IntroduceSection;
 
 
 const StyledIntroduceSection = styled.div`
-  width: 100vw;
-  height: 80vh;
-  font-size: 100px;
-  text-align: center;
+
+`
+
+const StyledIntroduceAnnounce = styled.div`
 `

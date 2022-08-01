@@ -12,11 +12,6 @@ function App() {
   return (
    <Main>
     <MainHeader/>
-    <Canvas>
-        <Suspense fallback={null}>
-          <Earth />
-        </Suspense>
-      </Canvas>
       <MainContent>
         <IntroduceSection/>
         <ProfileSection/>
