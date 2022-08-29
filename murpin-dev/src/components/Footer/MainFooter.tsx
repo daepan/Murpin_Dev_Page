@@ -19,9 +19,9 @@ export default MainFooter;
 const StyledMainFooter = styled.div`
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
     flex-direction: column;
-    min-height: 200px;
     position : relative;
     transform : translateY(-100%);
 `

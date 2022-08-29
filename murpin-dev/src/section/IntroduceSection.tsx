@@ -13,7 +13,7 @@ export default IntroduceSection;
 
 const Hello = styled.div`
   z-index: 4;
-  font-size: 30px;
+  font-size: 50px;
 `
 
 const rotate = keyframes`
