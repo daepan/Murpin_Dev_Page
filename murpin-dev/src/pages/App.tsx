@@ -1,9 +1,6 @@
 import MainHeader from "../components/Header/MainHeader";
-import IntroduceSection from "../components/IntroduceSection/IntroduceSection";
-import ProfileSection from "../components/ProfileSection/ProfileSection";
-import Earth from "../components/Earth/Earth";
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import IntroduceSection from "../section/IntroduceSection";
+import ProfileSection from "../section/ProfileSection";
 import MainFooter from "../components/Footer/MainFooter";
 import styled from "styled-components";
 import './App.css';
