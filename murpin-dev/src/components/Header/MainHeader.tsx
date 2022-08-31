@@ -14,12 +14,12 @@ export default MainHeader;
 
 
 const StyledMainHeader = styled.div`
-  height: 150px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 const HeaderTitle = styled.div`
   font-family: 'Ignoto';
-  font-size: 75px;
+  font-size: 50px;
 `

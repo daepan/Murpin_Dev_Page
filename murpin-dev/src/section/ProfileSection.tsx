@@ -10,6 +10,7 @@ export default ProfileSection;
 
 
 const StyledProfileSection = styled.div`
+min-height: calc(100vh + 350px);
 
 
 `
